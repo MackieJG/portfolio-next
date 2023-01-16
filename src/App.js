@@ -30,6 +30,7 @@ function App() {
           <Route path="/python" element={ <Python />} />
           <Route path="/javascript" element={ <JavaScript />} />
           <Route path="/java" element={ <Java />} />
+          <Route path="*" element={ <Home /> } />
       </Routes>
       </div>
     </Router>

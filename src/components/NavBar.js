@@ -29,7 +29,7 @@ const NavBar = () => {
         <>
             <NavList>
                 <ListItem color="black">
-                    <Link to="/">Home</Link>
+                    <Link to="/portfolio_webpage">Home</Link>
                 </ListItem>
                 <ListItem color="black">
                     <Link to="/python">Python</Link>

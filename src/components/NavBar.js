@@ -9,8 +9,9 @@ const NavList = styled.div`
     padding-top: 20px;
     padding-left:120px;
     flex-wrap: wrap;
-    
-   
+    justify-content: space-evenly;
+    width: 100%;
+
 `
 
 const ListItem = styled.li`
@@ -20,25 +21,35 @@ const ListItem = styled.li`
     font-size: 25px;
     font-weight: bolder;
     color: ${props => props.color};
-
-
 `
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  border-style: solid;
+  border-width:5px;
+  border-radius: 10px;
+  padding: 5px;
+`
+
+
 
 const NavBar = () => {
     return (
         <>
             <NavList>
                 <ListItem color="black">
-                    <Link to="/portfolio_webpage">Home</Link>
+                    <StyledLink to="/portfolio_webpage">Home</StyledLink>
                 </ListItem>
                 <ListItem color="black">
-                    <Link to="/python">Python</Link>
+                    <StyledLink to="/python">Python</StyledLink>
                 </ListItem>
                 <ListItem color="black">
-                    <Link to="/javascript">JavaScript</Link>
+                    <StyledLink to="/javascript">JavaScript</StyledLink>
                 </ListItem>
                 <ListItem color="black">
-                    <Link to="/java">Java</Link>
+                    <StyledLink to="/java">Java</StyledLink>
                 </ListItem>
             </NavList>
         </>

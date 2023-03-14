@@ -5,25 +5,19 @@ import NavBar from "./components/NavBar";
 import Python from "./components/Python";
 import JavaScript from "./components/JavaScript";
 import Java from "./components/Java";
-import backgroundImage from "./images/background.jpg";
-
-
 
 function App() {
 
   
 
-  const imageStyle = {
-    backgroundImage: `url(${backgroundImage})`,
-    backgroundSize: 'cover',
-  }
+
 
 
 
   return (
     
     <Router>
-      <div style={imageStyle}>
+    
       <NavBar />
       <Routes>
           <Route path="/" element={ <Home />} />
@@ -32,7 +26,6 @@ function App() {
           <Route path="/java" element={ <Java />} />
           <Route path="*" element={ <Home /> } />
       </Routes>
-      </div>
     </Router>
   );
 }

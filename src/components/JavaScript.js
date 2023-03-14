@@ -1,10 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import logoImage from '../images/logo.png';
-import homeImage from '../images/landing.png';
-import editImage from '../images/entry.png';
-import barChartImage from '../images/barchart.png';
-import radarImage from '../images/radargraph.png';
+import ReactPlayer from 'react-player';
 
 const JavaScript = () => {
 
@@ -47,21 +44,7 @@ const JavaScript = () => {
         width: 300px;
         height: 300px;
     `
-    const ProjectImage = styled.img`
-        border-radius: 5%;
-        width: 400px;
-        height: 400px;
-        margin: 160px;
-        transform: scale(1.6);
-        transition: transform 0.3s ease-in-out;
-    `
-    const ImageDiv = styled.div`
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        padding: 20px;
-    `
+   
 
 
     return(
@@ -75,13 +58,9 @@ const JavaScript = () => {
              <List1>
                 CRUD Functionality with dynamic visual representation.
             </List1>
+            <ReactPlayer url="https://youtu.be/e27rc_Zbops" controls />
     </JavaScriptDiv>
-    <ImageDiv>
-    <ProjectImage src={homeImage} alt="homepage_image" onError={onImageError}/>
-    <ProjectImage src={editImage} alt="entry_image" onError={onImageError}/>
-    <ProjectImage src={barChartImage} alt="barchart_image" onError={onImageError}/>
-    <ProjectImage src={radarImage} alt="radar_image" onError={onImageError}/>
-    </ImageDiv>
+  
     </>
     )
 };

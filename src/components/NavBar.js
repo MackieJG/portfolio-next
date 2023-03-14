@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import "../App.css"
 
+
+
+const BackgroundNav = styled.div`
+    background-color: #eab676;
+    height: 80px;
+`
 const NavList = styled.div`
     display:flex;
     flex-direction: row;
@@ -11,7 +17,6 @@ const NavList = styled.div`
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
-
 `
 
 const ListItem = styled.li`
@@ -37,7 +42,8 @@ const StyledLink = styled(Link)`
 
 const NavBar = () => {
     return (
-        <>
+        <>  
+        <BackgroundNav>
             <NavList>
                 <ListItem color="black">
                     <StyledLink to="/portfolio_webpage">Home</StyledLink>
@@ -52,6 +58,7 @@ const NavBar = () => {
                     <StyledLink to="/java">Java</StyledLink>
                 </ListItem>
             </NavList>
+        </BackgroundNav>
         </>
     )
 };

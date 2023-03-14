@@ -1,8 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import ReactPlayer from 'react-player'
 
 const Python = () => {
 
+    const Title = styled.h4`
+        
+    `
     const PythonDiv = styled.div`
         font-family: Roboto, sans-serif;
         font-size: 25px;
@@ -30,18 +34,19 @@ const Python = () => {
         padding: 5px;
     `
 
-
+   
 
     return (
         <div>
             <PythonDiv>
-                <h4>Inventory Management App</h4>
+                <Title>Inventory Management App</Title>
                 <GitHub href="https://github.com/MackieJG/Project_Python_W5" target="_blank">Github Link!</GitHub>
                 <Paragraph1>Python/Flask/PostGreSQL
                 </Paragraph1>
                 <List1>
                     Create, Update, and Delete Equipment, Coffee and Producers.
                 </List1>
+                <ReactPlayer url="https://youtu.be/nWTkNJm1lsY" controls />
             </PythonDiv>
 
         </div>
